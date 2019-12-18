@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
-// import BlogList from '../components/BlogList';
-// import Layout from '../components/Layout';
 
 const Home = () => {
   const [date, setDate] = useState(null);
@@ -23,57 +21,24 @@ const Home = () => {
       <Nav />
 
       <div className="hero">
-        <h1 className="title">
-          Kyle is a new dad, product designer, front-end developer, and a
-          voracious learner.
-        </h1>
+        <h1 className="title">Welcome to the playground 👋</h1>
+        <h2 className="subtitle">
+          Warning this site is in constant flux. Being a fun weekend hobby for
+          me, I like breaking and putting it back together. Please feel free to
+          reach if you have any questions or follow along.
+        </h2>
+        <p className="description">This site is built with ❤️ on NEXT.js</p>
+        <small>
+          My CSS and JS are a complete mess right now 🐛. Stay tuned for updates
+          around that.
+        </small>
+        <h2 className="subtitle">About me</h2>
         <p className="description">
-          Currently the senior product designer, at Roadtrippers 🗺. Freelance
-          designer and coffee nerd. Feel free to reach out! Lets talk about
-          pixels, maps, or coffee ✌️
+          You will quickly find out that I am typically a glass half full type
+          of person. I believe that the best output for success comes from
+          working my hardest to encourage myself and those around me to reach
+          their goals.
         </p>
-
-        <p className="row date">
-          The date is:&nbsp;{' '}
-          {date ? (
-            <span>
-              <b>{date.date}</b>
-            </span>
-          ) : (
-            <span className="loading" />
-          )}
-        </p>
-
-        {/* <Layout
-          pathname="/"
-          siteTitle={props.title}
-          siteDescription={props.description}
-        >
-          <section>
-            <BlogList allBlogs={props.allBlogs} />
-          </section>
-        </Layout> */}
-
-        <div className="row">
-          <Link href="https://github.com/zeit/next.js#setup">
-            <a className="card">
-              <h3>Getting Started &rarr;</h3>
-              <p>Learn more about Next.js on GitHub and in their examples.</p>
-            </a>
-          </Link>
-          <Link href="https://github.com/zeit/next.js/tree/master/examples">
-            <a className="card">
-              <h3>Examples &rarr;</h3>
-              <p>Find other example boilerplates on the Next.js GitHub.</p>
-            </a>
-          </Link>
-          <Link href="https://github.com/zeit/next.js">
-            <a className="card">
-              <h3>Create Next App &rarr;</h3>
-              <p>Was this tool helpful? Let us know how we can improve it!</p>
-            </a>
-          </Link>
-        </div>
       </div>
 
       <style jsx>{`
