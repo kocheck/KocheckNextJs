@@ -1,0 +1,21 @@
+// Font Sizes
+$base-size: 16px;
+
+$Large-size: 2.441em;
+$MediumLarge-size: 1.953em;
+$Medium-size: 1.563em;
+$MediumSmall-size: 1.25em;
+$paragraph-size: 1em;
+$small-size: 0.8em;
+
+// Font Line-hieght
+$Large-Lineheight: 3em;
+
+// Type Sizes
+body {
+  font-size: $base-size;
+}
+
+.example {
+  font-size: $Large-size;
+}

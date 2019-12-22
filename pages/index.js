@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
+import css from '../styles/typography.scss';
 // import BlogList from '../components/BlogList';
 // import Layout from '../components/Layout';
 
@@ -23,7 +24,7 @@ const Home = () => {
       <Nav />
 
       <div className="hero">
-        <h1 className="title">
+        <h1 className={css.example}>
           Kyle is a new dad, product designer, front-end developer, and a
           voracious learner.
         </h1>
