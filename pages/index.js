@@ -13,10 +13,11 @@ const Home = () => {
     async function getDate() {
       const res = await fetch('/api/date');
       const newDate = await res.json();
+
       setDate(newDate);
     }
     getDate();
-  }, []);
+  }, [setDate]);
 
   return (
     <div>
@@ -34,7 +35,7 @@ const Home = () => {
           pixels, maps, or coffee ✌️
         </h2>
 
-        <p className="row date">
+        <p className={css.body}>
           The date is:&nbsp;{' '}
           {date ? (
             <span>
@@ -65,6 +66,13 @@ const Home = () => {
             </a>
           </Link>
         </div>
+      </div>
+      <div>
+        <p>
+          © {date ? <span>{date.date}</span> : <span className="loading" />},
+          Kyle Kochanek. Site deployed on <a href="https://zeit.co/">NOW</a> &
+          font provided by <a href="https://github.com/rsms/inter">Inter</a>
+        </p>
       </div>
     </div>
   );
