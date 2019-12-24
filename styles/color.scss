@@ -1,0 +1,31 @@
+/* This file holds all of the color varibles and should be loaded in with Every Page. */
+:root {
+  /* Variables must to start with `--` */
+
+  /* You can name these variables whatever you want */
+  --body-background: #fff;
+  --separator: #c6c6c8;
+
+  /* Brand and Link Color */
+  --brand: #004bd7;
+
+  /* Label Colors */
+  --label-Primary: #19191c;
+  --label-Secondary: #8a8a8e;
+  --label-Tertiary: rgba(60, 60, 67, 0.3);
+  --label-Quarternary: rgba(60, 60, 67, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override the Light Mode values */
+    --body-background: #19191c;
+    --separator: #38383a;
+    --brand: #3d80ff;
+    /* Label Colors */
+    --label-Primary: #fff;
+    --label-Secondary: #97979e;
+    --label-Tertiary: rgba(235, 235, 245, 0.3);
+    --label-Quarternary: rgba(235, 235, 245, 0.18);
+  }
+}

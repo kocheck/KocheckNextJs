@@ -1,0 +1,8 @@
+// Import Main styles
+@import "color";
+@import "typography";
+
+// Global Color Adjustments
+html {
+  background-color: var(--body-background);
+}
