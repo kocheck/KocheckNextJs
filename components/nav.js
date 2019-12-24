@@ -1,7 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
+
 // Add aditional links here
-const links = [{ href: '/about', label: 'What is this?' }].map(link => {
+const callToAction = [
+  { href: '/about', label: '🤔 What’s this?' },
+  { href: '/contact', label: '📱 Contact' },
+  { href: '/now', label: '⚡️ Now' },
+].map(callToAction => {
+  callToAction.key = `nav-link-${callToAction.href}-${callToAction.label}`;
+  return callToAction;
+});
+const links = [
+  { href: '/about', label: '🤔 What’s this?' },
+  { href: '/contact', label: '📱 Contact' },
+  { href: '/now', label: '⚡️ Now' },
+].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
 });
@@ -10,8 +23,22 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
+        <a href="/">
+          <image className="nav-logo" src="/static/branding/logoIcon.png" />
+          Kocheck Portfolio
+        </a>
+      </li>
+      {callToAction.map(({ key, href, label }) => (
+        <li key={key}>
+          <a href={href}>{label}</a>
+        </li>
+      ))}
+    </ul>
+    {/* ======= */}
+    <ul>
+      <li>
         <Link href="/">
-          <a>Home</a>
+          <a>🏡 Home</a>
         </Link>
       </li>
       {links.map(({ key, href, label }) => (
@@ -21,7 +48,7 @@ const Nav = () => (
       ))}
     </ul>
 
-    <style jsx>{`
+    {/* <style jsx>{`
       :global(body) {
         margin: 0;
       }
@@ -44,7 +71,7 @@ const Nav = () => (
         text-decoration: none;
         font-size: 13px;
       }
-    `}</style>
+    `}</style> */}
   </nav>
 );
 

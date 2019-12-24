@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import css from '../styles/main.scss';
@@ -8,6 +10,19 @@ import Footer from '../components/footer';
 // import Layout from '../components/Layout';
 
 const Home = () => (
+  //   const frontData = useState(null);
+  // ======= Need to Learn more ====================
+  //   const getFrontData =  {
+  //     function() {
+  //       async getInitialProps => {
+  //         const content = await import(`../docs/home.md`);
+  //         const data = matter(content.default);
+  //         return { ...data };
+  //     },
+  //   },
+  // },
+  // frontData = getFrontData;
+
   <div>
     <Head title="Home" />
     <Nav />
@@ -54,5 +69,4 @@ const Home = () => (
       </div> */}
   </div>
 );
-
 export default Home;
