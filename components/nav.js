@@ -24,7 +24,7 @@ const Nav = () => (
     <ul>
       <li>
         <a href="/">
-          <image className="nav-logo" src="./static/branding/logoIcon.png"></image>
+          <image className="nav-logo" src="./public/logoIcon.png"></image>
           Kocheck Portfolio
         </a>
       </li>
