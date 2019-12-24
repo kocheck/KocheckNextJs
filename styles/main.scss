@@ -1,0 +1,58 @@
+// Import Main styles
+@import "custom-props";
+@import "color";
+@import "typography";
+// Not sure what this does below, Need to learn that.
+@import url("https://rsms.me/inter/inter.css");
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-size: var(--unit);
+  line-height: var(--font-base-line-height);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: var(--label-Primary);
+  background-color: var(--body-background);
+}
+
+html,
+body,
+body > div,
+body > div > div {
+  height: 100%;
+}
+
+.divider {
+  color: var(--separator);
+  margin-top: calc(24 / var(--unit) * 1rem);
+  margin-bottom: calc(24 / var(--unit) * 1rem);
+}
+
+/* Link Styleing */
+
+/* Selected Links inside Paragraphs */
+p > a {
+  color: var(--brand);
+  transition: 0.3s all;
+}
+p > a:visited {
+  color: var(--brand);
+}
+
+p > a:hover {
+  color: var(--label-Secondary);
+}
+
+.nav-logo {
+  height: 48px;
+  width: 48px;
+}
