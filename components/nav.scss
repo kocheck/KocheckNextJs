@@ -1,0 +1,49 @@
+// CSS for Nav
+
+nav > .mainCTA {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+nav > .secondary {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > ul {
+  align-items: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 0 1.333333333rem;
+}
+
+nav > ul > li > a {
+  height: 2.666666667rem;
+  color: var(--label-Primary);
+  transition: 0.3s all;
+  padding: 0 0.5em;
+
+  &:hover {
+    border-bottom: var(--label-Primary) 0.325em solid;
+  }
+}
+
+nav > .secondary > li > a {
+  color: var(--label-Secondary);
+  &:hover {
+    border-bottom: var(--label-Secondary) 0.225em solid;
+  }
+}
+
+nav > ul > li > .brandingLockup {
+  display: flex;
+  height: 2.666666667rem;
+}
+
+nav > ul > li > .brandingLockup > div {
+  align-self: center;
+  padding-left: 1.125rem;
+}

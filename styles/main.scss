@@ -31,11 +31,6 @@ body > div > div {
   height: 100%;
 }
 
-nav > ul > li {
-  min-height: 48px;
-  display: inline-block;
-}
-
 ul > li {
   list-style: none;
 }
@@ -47,6 +42,9 @@ ul > li {
 }
 
 /* Link Styleing */
+a {
+  text-decoration: none;
+}
 
 /* Selected Links inside Paragraphs */
 p > a {
@@ -59,13 +57,5 @@ p > a:visited {
 
 p > a:hover {
   color: var(--label-Secondary);
-}
-
-.nav-logo {
-  background-image: url("/static/branding/logoIcon.png");
-  background-size: cover;
-  background-color: red;
-  min-height: 48px;
-  min-height: 48px;
-  display: inline-block;
+  text-decoration: underline;
 }
