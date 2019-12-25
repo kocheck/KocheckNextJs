@@ -31,6 +31,15 @@ body > div > div {
   height: 100%;
 }
 
+nav > ul > li {
+  min-height: 48px;
+  display: inline-block;
+}
+
+ul > li {
+  list-style: none;
+}
+
 .divider {
   color: var(--separator);
   margin-top: calc(24 / var(--unit) * 1rem);
@@ -53,6 +62,10 @@ p > a:hover {
 }
 
 .nav-logo {
-  height: 48px;
-  width: 48px;
+  background-image: url("/static/branding/logoIcon.png");
+  background-size: cover;
+  background-color: red;
+  min-height: 48px;
+  min-height: 48px;
+  display: inline-block;
 }

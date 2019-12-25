@@ -24,8 +24,8 @@ const Nav = () => (
     <ul>
       <li>
         <a href="/">
-          <image className="nav-logo" src="/static/branding/logoIcon.png" />
-          Kocheck Portfolio
+          <image className="nav-logo" scr="/static/branding/logoIcon.png"></image>
+          <div>Kocheck Portfolio</div>
         </a>
       </li>
       {callToAction.map(({ key, href, label }) => (
