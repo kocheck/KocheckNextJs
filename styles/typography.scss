@@ -16,6 +16,8 @@ $small-height: 1.2;
 // Type componants
 body {
   font-size: $unit;
+  font-feature-settings: "calt" 1, "liga" 1, "case" 1, "ss01" 1, "ss02" 1,
+    "zero" 1;
 }
 
 .header {

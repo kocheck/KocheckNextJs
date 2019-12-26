@@ -1,0 +1,50 @@
+// CSS for Nav
+nav {
+  display: inline-block;
+  width: 66.666666667rem;
+}
+
+nav > .mainCTA {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+// nav > .secondary > li > a {
+//   color: var(--label-Secondary);
+// }
+
+nav > ul {
+  align-items: center;
+  font-weight: bold;
+}
+
+nav > ul > li:first-child {
+  padding-left: 0;
+
+  &:hover img {
+    outline: solid var(--brand);
+    border-radius: 100px;
+  }
+}
+
+nav > ul > li > a {
+  height: 2.666666667rem;
+  transition: 0.3s all;
+  padding: 0 0.5em;
+  color: var(--label-Primary);
+
+  &:hover {
+    color: var(--brand);
+  }
+}
+
+nav > ul > li > .brandingLockup {
+  display: flex;
+  height: 2.666666667rem;
+}
+
+nav > ul > li > .brandingLockup > div {
+  align-self: center;
+  padding-left: 1.125rem;
+}

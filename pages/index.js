@@ -25,9 +25,13 @@ const Home = () => (
 
   <div>
     <Head title="Home" />
-    <Nav />
+    <div className={css.navWrapper}>
+      <Nav />
+    </div>
+
 
     <div className="hero">
+      <p className={css.subtitle}>🚀May 1st or Bust...</p>
       <h1 className={css.header}>
         Kyle is a new dad, product designer, front-end developer, and a
         voracious learner.

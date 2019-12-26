@@ -31,6 +31,14 @@ body > div > div {
   height: 100%;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
 .divider {
   color: var(--separator);
   margin-top: calc(24 / var(--unit) * 1rem);
@@ -38,6 +46,9 @@ body > div > div {
 }
 
 /* Link Styleing */
+a {
+  text-decoration: none;
+}
 
 /* Selected Links inside Paragraphs */
 p > a {
@@ -50,9 +61,10 @@ p > a:visited {
 
 p > a:hover {
   color: var(--label-Secondary);
+  text-decoration: underline;
 }
 
-.nav-logo {
-  height: 48px;
-  width: 48px;
+.navWrapper {
+  text-align: center;
+  width: 100vw;
 }
