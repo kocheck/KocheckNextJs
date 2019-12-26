@@ -1,40 +1,41 @@
 // CSS for Nav
+nav {
+  display: inline-block;
+  width: 66.666666667rem;
+}
 
 nav > .mainCTA {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-weight: bold;
 }
 
-nav > .secondary {
-  display: flex;
-  justify-content: flex-end;
-}
+// nav > .secondary > li > a {
+//   color: var(--label-Secondary);
+// }
 
 nav > ul {
   align-items: center;
+  font-weight: bold;
 }
 
-nav > ul > li {
-  display: inline-block;
-  padding: 0 1.333333333rem;
+nav > ul > li:first-child {
+  padding-left: 0;
+
+  &:hover img {
+    outline: solid var(--brand);
+    border-radius: 100px;
+  }
 }
 
 nav > ul > li > a {
   height: 2.666666667rem;
-  color: var(--label-Primary);
   transition: 0.3s all;
   padding: 0 0.5em;
+  color: var(--label-Primary);
 
   &:hover {
-    border-bottom: var(--label-Primary) 0.325em solid;
-  }
-}
-
-nav > .secondary > li > a {
-  color: var(--label-Secondary);
-  &:hover {
-    border-bottom: var(--label-Secondary) 0.225em solid;
+    color: var(--brand);
   }
 }
 

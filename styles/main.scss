@@ -31,6 +31,10 @@ body > div > div {
   height: 100%;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 ul > li {
   list-style: none;
 }
@@ -58,4 +62,9 @@ p > a:visited {
 p > a:hover {
   color: var(--label-Secondary);
   text-decoration: underline;
+}
+
+.navWrapper {
+  text-align: center;
+  width: 100vw;
 }
