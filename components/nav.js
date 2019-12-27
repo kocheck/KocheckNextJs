@@ -1,12 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import Logo from '../components/logo'
-import css from '../components/nav.scss';
+import Logo from './logo';
+import css from './nav.scss';
 
 // Add aditional links here
 const callToAction = [
-  { href: '/about', label: '🎨 View Portfolio' },
-  { href: '/contact', label: '🧠 Read Thoughts' },
   { href: '/about', label: '🤔 What’s this? ' },
   { href: '/now', label: '⚡️ Now ' },
 ].map(callToAction => {
@@ -14,23 +12,36 @@ const callToAction = [
   return callToAction;
 });
 
-
 const Nav = () => (
   <nav>
-      <ul className={css.mainCTA}>
+    <ul className={css.mainCTA}>
+      <div>
         <li>
           <a className={css.brandingLockup} href="/">
             <Logo />
             <div>Kocheck Portfolio</div>
           </a>
         </li>
+        <li>
+          <a href="/portfolio">
+            <div>🎨 View Portfolio</div>
+          </a>
+        </li>
+        <li>
+          <a href="/thoughts">
+            <div>🧠 Read Thoughts</div>
+          </a>
+        </li>
+      </div>
+      <div className={css.secCTA}>
         {callToAction.map(({ key, href, label }) => (
           <li key={key}>
             <a href={href}>{label}</a>
           </li>
         ))}
-      </ul>
-      {/* ======= */}
+      </div>
+    </ul>
+    {/* ======= */}
     {/* <style jsx>{`
     `}</style> */}
   </nav>
