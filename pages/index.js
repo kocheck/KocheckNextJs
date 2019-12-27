@@ -6,23 +6,11 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 import css from '../styles/main.scss';
 import Footer from '../components/footer';
+import Button from '../components/button';
 // import BlogList from '../components/BlogList';
 // import Layout from '../components/Layout';
 
 const Home = () => (
-  //   const frontData = useState(null);
-  // ======= Need to Learn more ====================
-  //   const getFrontData =  {
-  //     function() {
-  //       async getInitialProps => {
-  //         const content = await import(`../docs/home.md`);
-  //         const data = matter(content.default);
-  //         return { ...data };
-  //     },
-  //   },
-  // },
-  // frontData = getFrontData;
-
   <div>
     <Head title="Home" />
     <div className={css.navWrapper}>
@@ -42,6 +30,7 @@ const Home = () => (
             designer and coffee nerd. Feel free to reach out! Lets talk about
             pixels, maps, or coffee ✌️
           </h2>
+          <Button link="link" />
 
           <div className="row">
             <Link href="https://github.com/zeit/next.js#setup">

@@ -78,7 +78,7 @@ main > div {
   width: 100vw;
   text-align: left;
   // Desktop Styles
-  @media (min-width: $media-Xl) {
-    width: 66.666666667rem;
+  @media (min-width: $media-desktop) {
+    width: 50rem;
   }
 }
