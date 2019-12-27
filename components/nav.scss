@@ -1,13 +1,24 @@
 // CSS for Nav
+@import "../styles/custom-media.scss";
+
 nav {
+  // Default Mobile Styles
   display: inline-block;
-  width: 66.666666667rem;
+  width: 100vw;
+  // Desktop Styles
+  @media (min-width: $media-Xl) {
+    width: 66.666666667rem;
+  }
 }
 
 nav > .mainCTA {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+}
+
+.secCTA > li > a {
+  color: var(--label-Secondary);
 }
 
 // nav > .secondary > li > a {
@@ -19,16 +30,21 @@ nav > ul {
   font-weight: bold;
 }
 
-nav > ul > li:first-child {
+nav > ul > div > li:first-child {
   padding-left: 0;
 
-  &:hover img {
-    outline: solid var(--brand);
+  & img {
+    border: 4px solid var(--body-background);
     border-radius: 100px;
+    transition: 0.3s all;
+  }
+
+  &:hover img {
+    border: 4px solid var(--brand);
   }
 }
 
-nav > ul > li > a {
+nav a {
   height: 2.666666667rem;
   transition: 0.3s all;
   padding: 0 0.5em;
@@ -39,12 +55,37 @@ nav > ul > li > a {
   }
 }
 
-nav > ul > li > .brandingLockup {
+nav > ul > div {
+  display: flex;
+}
+
+nav > ul > div > li {
+  list-style: none;
+  align-self: center;
+  padding: 0 0.5em;
+}
+
+nav > ul > div > li > .brandingLockup {
   display: flex;
   height: 2.666666667rem;
 }
 
-nav > ul > li > .brandingLockup > div {
+nav > ul > div > li > .brandingLockup > div {
   align-self: center;
   padding-left: 1.125rem;
 }
+
+@media (min-width: $media-mobile) {
+}
+
+@media (min-width: $media-tablet) {
+}
+
+@media (max-width: $media-desktop) {
+}
+
+// @media (min-width: $media-desktop) {
+//   nav {
+//     width: 66.666666667rem;
+//   }
+// }

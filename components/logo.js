@@ -1,15 +1,17 @@
 function MyImage() {
-    return <>
-        <img src="/logoIcon.png" alt="my profile image" />
-        <style jsx>
+  return (
+    <>
+      <img src="/logoIcon.png" alt="my profile image" />
+      <style jsx>
         {`
           img {
-            height: 2.666666667rem;
-            width: 2.666666667rem;
+            height: 2.444444444rem;
+            width: 2.444444444rem;
           }
         `}
       </style>
     </>
-  }
+  );
+}
 
-  export default MyImage
+export default MyImage;

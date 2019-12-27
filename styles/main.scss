@@ -2,6 +2,8 @@
 @import "custom-props";
 @import "color";
 @import "typography";
+@import "custom-media";
+
 // Not sure what this does below, Need to learn that.
 @import url("https://rsms.me/inter/inter.css");
 
@@ -64,7 +66,19 @@ p > a:hover {
   text-decoration: underline;
 }
 
+main,
 .navWrapper {
   text-align: center;
   width: 100vw;
+}
+
+main > div {
+  // Default Mobile Styles
+  display: inline-block;
+  width: 100vw;
+  text-align: left;
+  // Desktop Styles
+  @media (min-width: $media-desktop) {
+    width: 50rem;
+  }
 }
