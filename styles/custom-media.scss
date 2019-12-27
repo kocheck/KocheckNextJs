@@ -1,0 +1,23 @@
+$media-min-small: 450px;
+$media-max-small: 449px;
+$media-min-medium: 675px;
+$media-min-large: 900px;
+
+// Good notes to read -> https://css-tricks.com/approaches-media-queries-sass/
+
+// @include breakpoint(453px $breakpoint-tablet) {
+
+// }
+
+// @include breakpoint($breakpoint-tablet 850px) {
+
+// }
+
+// /* Compiles to: */
+// @media (min-width: 453px) and (max-width: 768px) {
+
+// }
+
+// @media (min-width: 768px) and (max-width: 850px) {
+
+// }
