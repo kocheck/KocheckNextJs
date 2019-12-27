@@ -30,7 +30,8 @@ const Home = () => (
             designer and coffee nerd. Feel free to reach out! Lets talk about
             pixels, maps, or coffee ✌️
           </h2>
-          <Button link="link" />
+          <Button link="/portfolio" title="🎨 View Portfolio" state="isOn" />
+          <Button link="/now" title="⚡️ Whats Happening Now" state="isOff" />
 
           <div className="row">
             <Link href="https://github.com/zeit/next.js#setup">
