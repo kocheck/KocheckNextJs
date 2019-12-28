@@ -22,7 +22,6 @@ const Button = props => (
       }
       .isOff > .buttonStyle:hover {
         color: var(--label-Secondary);
-        margin-left: 4px;
       }
 
       .buttonStyle {

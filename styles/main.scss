@@ -53,17 +53,17 @@ a {
 }
 
 /* Selected Links inside Paragraphs */
-p > a {
+a {
   color: var(--brand);
   transition: 0.3s all;
 }
-p > a:visited {
-  color: var(--brand);
-}
 
-p > a:hover {
+a:visited {
+  color: var(--label-Primary);
+}
+a:hover {
   color: var(--label-Secondary);
-  text-decoration: underline;
+  // text-decoration: underline;
 }
 
 main,
@@ -75,10 +75,26 @@ main,
 main > div {
   // Default Mobile Styles
   display: inline-block;
-  width: 100vw;
+  margin: 0 24px;
   text-align: left;
   // Desktop Styles
   @media (min-width: $media-desktop) {
     width: 50rem;
   }
+}
+
+// Needs to be a componant
+
+.hero {
+  padding: 6rem 0 4rem 0;
+}
+
+.header,
+.title,
+.mainCall {
+  margin: 24px auto;
+}
+
+.title {
+  font-weight: 500;
 }
