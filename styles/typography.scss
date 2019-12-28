@@ -25,22 +25,26 @@ body {
   line-height: $header-height;
   color: var(--label-Primary);
 }
-.subHeader {
+.subHeader,
+h1 {
   font-size: $subHeader-size;
   list-style: $subHeader-height;
   color: var(--label-Secondary);
 }
-.title {
+.title,
+h2 {
   font-size: $title-size;
   line-height: $title-height;
   color: var(--label-Secondary);
 }
-.subTitle {
+.subTitle,
+h3 {
   font-size: $subTitle-size;
   line-height: $subTitle-height;
   color: var(--label-Primary);
 }
-.body {
+.body,
+p {
   font-size: $body-size;
   font-size: $body-height;
   color: var(--label-Primary);
