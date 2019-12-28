@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import css from '../styles/main.scss';
 import Footer from '../components/footer';
-import Button from '../components/button';
 import Hero from '../components/Hero';
 // import BlogList from '../components/BlogList';
 // import Layout from '../components/Layout';
