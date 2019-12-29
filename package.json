@@ -1,6 +1,6 @@
 {
-  "name": "create-next-example-app",
-  "description": "A Next.js starter app.",
+  "name": "Kochanek-Site",
+  "description": "A Next.js personal portfolio app.",
   "repository": {
     "type": "git",
     "url": "https://github.com/zeit/now-examples/tree/master/nextjs"
