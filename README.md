@@ -1,4 +1,10 @@
-![Next.js Logo](../.github/images/next.svg)
+# My Personal Site
+
+This is my personal site. I have been teaching myself how to build things in my free time for fun. Decided I wanted to make this an ongoing project. Check back for updates. Always open for comments ✌️.
+
+---
+
+![Next.js Logo](../.github/public/next.svg)
 
 # Next.js Example
 
