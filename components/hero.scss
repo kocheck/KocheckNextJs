@@ -1,0 +1,21 @@
+@import "../styles/custom-props.scss";
+@import "../styles/typography.scss";
+
+.hero {
+  padding: 6rem 0 4rem 0;
+}
+.Blankhero {
+  padding: 6rem 0 0 0;
+}
+
+.header,
+.title {
+  margin: 24px auto;
+}
+.mainCall {
+  margin: 48px auto;
+}
+
+.title {
+  font-weight: 500;
+}

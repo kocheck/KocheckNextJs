@@ -10,7 +10,7 @@ import Hero from '../components/Hero';
 
 const Home = () => (
   <div>
-    <Head title="Home" />
+    <Head title="🧠 Thoughts" />
     <div className={css.navWrapper}>
       <Nav />
     </div>
@@ -18,14 +18,13 @@ const Home = () => (
     <main>
       {/* Main Hero Props */}
       <Hero
-        descriptor="🚀May 1st or Bust..."
-        title="Kyle is a new dad, product designer, front-end developer, and a
-      voracious learner."
-        subtitle="Currently the senior product designer, at Roadtrippers 🗺. Freelance designer and coffee nerd. Feel free to reach out! Lets talk about pixels, maps, or coffee ✌️"
-        CTAlink="/portfolio"
-        CTAlabel="🎨 View Portfolio"
-        OTAlink="/now"
-        OTAlabel="⚡️ Whats Happening Now"
+        descriptor="🧠 Thoughts"
+        title="A few thoughts written out..."
+        subtitle="Collection of thoughts, tutorials and quick tips. This is ment to be my brain dump. If you see somthing that propibly should be fixed feel free to submite a pull reqest"
+        CTAlink="/read"
+        CTAlabel="👀 Read Latest"
+        OTAlink="https://github.com/kocheck"
+        OTAlabel="🐛 Submite a PR Request"
       />
       <div>
         <div className="row">

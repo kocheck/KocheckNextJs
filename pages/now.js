@@ -10,7 +10,7 @@ import Hero from '../components/BlankHero';
 
 const Home = () => (
   <div>
-    <Head title="🧠 Thoughts" />
+    <Head title="⚡️ Now" />
     <div className={css.navWrapper}>
       <Nav />
     </div>

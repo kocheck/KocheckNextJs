@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import css from './footer.scss';
 
 const Footer = () => {
   const [date, setDate] = useState(null);
@@ -14,7 +15,7 @@ const Footer = () => {
   }, [setDate]);
 
   return (
-    <div>
+    <div className={css.footer}>
       <p>
         © {date ? <span>{date.date}</span> : <span className="loading" />}, Kyle
         Kochanek. Site deployed on <a href="https://zeit.co/">NOW</a> & font
