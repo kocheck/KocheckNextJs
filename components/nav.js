@@ -19,10 +19,10 @@ const Nav = () => (
         <li>
           <a className={css.brandingLockup} href="/">
             <Logo />
-            <div>Kocheck Portfolio</div>
+            <div>Kyle Kochanek</div>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="/portfolio">
             <div>🎨 View Portfolio</div>
           </a>
@@ -31,15 +31,15 @@ const Nav = () => (
           <a href="/thoughts">
             <div>🧠 Read Thoughts</div>
           </a>
-        </li>
+        </li> */}
       </div>
-      <div className={css.secCTA}>
+      {/* <div className={css.secCTA}>
         {callToAction.map(({ key, href, label }) => (
           <li key={key}>
             <a href={href}>{label}</a>
           </li>
         ))}
-      </div>
+      </div> */}
     </ul>
     {/* ======= */}
     {/* <style jsx>{`

@@ -16,11 +16,13 @@ const Footer = () => {
 
   return (
     <div className={css.footer}>
-      <p>
-        © {date ? <span>{date.date}</span> : <span className="loading" />}, Kyle
-        Kochanek. Site deployed on <a href="https://zeit.co/">NOW</a> & font
-        provided by <a href="https://github.com/rsms/inter">Inter</a>
-      </p>
+      <div className={css.footer}>
+        <p>
+          © {date ? <span>{date.date}</span> : <span className="loading" />},
+          Kyle Kochanek. Site deployed on <a href="https://zeit.co/">NOW</a> &
+          font provided by <a href="https://github.com/rsms/inter">Inter</a>
+        </p>
+      </div>
     </div>
   );
 };

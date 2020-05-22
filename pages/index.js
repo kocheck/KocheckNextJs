@@ -18,16 +18,15 @@ const Home = () => (
     <main>
       {/* Main Hero Props */}
       <Hero
-        descriptor="🚀May 1st or Bust..."
-        title="Kyle is a new dad, product designer, front-end developer, and a
-      voracious learner."
-        subtitle="Currently the senior product designer, at Roadtrippers 🗺. Freelance designer and coffee nerd. Feel free to reach out! Lets talk about pixels, maps, or coffee ✌️"
+        descriptor="🚧 Pardon the dust 🚧"
+        title="Portfolio"
+        subtitle="Building in progress"
         CTAlink="/portfolio"
         CTAlabel="🎨 View Portfolio"
         OTAlink="/now"
         OTAlabel="⚡️ Whats Happening Now"
       />
-      <div>
+      {/* <div>
         <div className="row">
           <Link href="https://github.com/zeit/next.js#setup">
             <a className="card">
@@ -48,7 +47,7 @@ const Home = () => (
             </a>
           </Link>
         </div>
-      </div>
+      </div> */}
     </main>
     <Footer />
     {/* <div>

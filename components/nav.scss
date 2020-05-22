@@ -5,6 +5,7 @@ nav {
   // Default Mobile Styles
   display: inline-block;
   width: 100vw;
+  padding-top: 12px;
   // Desktop Styles
   @media (min-width: $media-Xl) {
     width: 66.666666667rem;
