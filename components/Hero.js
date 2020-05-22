@@ -8,10 +8,10 @@ const Hero = props => (
       <p className={css.subtitle}>{props.descriptor}</p>
       <h1 className={css.header}>{props.title}</h1>
       <h2 className={css.title}>{props.subtitle}</h2>
-      <div className={css.mainCall}>
+      {/* <div className={css.mainCall}>
         <Button link={props.CTAlink} title={props.CTAlabel} state="isOn" />
         <Button link={props.OTAlink} title={props.OTAlabel} state="isOff" />
-      </div>
+      </div> */}
     </div>
   </div>
 );
