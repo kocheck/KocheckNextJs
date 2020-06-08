@@ -5,6 +5,7 @@ import Nav from '../components/nav';
 import css from '../styles/main.scss';
 import Footer from '../components/footer';
 import Hero from '../components/Hero';
+// import date from './api/date';
 // import BlogList from '../components/BlogList';
 // import Layout from '../components/Layout';
 
@@ -26,7 +27,7 @@ const Home = () => (
         OTAlink="/now"
         OTAlabel="⚡️ Whats Happening Now"
       />
-      {/* <div>
+      <div>
         <div className="row">
           <Link href="https://github.com/zeit/next.js#setup">
             <a className="card">
@@ -47,16 +48,16 @@ const Home = () => (
             </a>
           </Link>
         </div>
-      </div> */}
+      </div>
     </main>
     <Footer />
-    {/* <div>
-        <p>
-          © {date ? <span>{date.date}</span> : <span className="loading" />},
-          Kyle Kochanek. Site deployed on <a href="https://zeit.co/">NOW</a> &
-          font provided by <a href="https://github.com/rsms/inter">Inter</a>
-        </p>
-      </div> */}
+    <div>
+      <p>
+        {/* © {date ? <span>{date.date}</span> : <span className="loading" />}, */}{' '}
+        Kyle Kochanek. Site deployed on <a href="https://zeit.co/">NOW</a> &
+        font provided by <a href="https://github.com/rsms/inter">Inter</a>
+      </p>
+    </div>
   </div>
 );
 export default Home;

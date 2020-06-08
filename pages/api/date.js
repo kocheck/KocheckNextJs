@@ -1,4 +1,4 @@
-export default (req, res) => {
+export default res => {
   const date = new Date().getFullYear();
   // .replace(/T/, ' ')
   // .replace(/\..+/, '');
